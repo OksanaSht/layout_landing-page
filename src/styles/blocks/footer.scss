@@ -53,10 +53,11 @@
     border-radius: $border-radius;
     border: none;
 
-    font-family: 'Space Mono', sans-serif;
-    font-size: 14px;
-    line-height: 140%;
-
+    &:is(:-webkit-autofill, :autofill) {
+      font-family: 'Space Mono', sans-serif;
+      font-size: 14px;
+      line-height: 140%;
+    }
     @include focus;
   }
 
@@ -71,9 +72,11 @@
     border-radius: $border-radius;
     border: none;
 
-    font-family: 'Space Mono', sans-serif;
-    font-size: 14px;
-    line-height: 140%;
+    &:is(:-webkit-autofill, :autofill) {
+      font-family: 'Space Mono', sans-serif;
+      font-size: 14px;
+      line-height: 140%;
+    }
 
     @include focus;
   }
